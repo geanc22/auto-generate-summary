@@ -19,7 +19,9 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           # Instalamos las dependencias necesarias directamente
-          pip install "openai>=1.0.0" openai python-dotenv requests typing-extensions pyyaml
+          pip install openai python-dotenv requests typing-extensions pyyaml
+          pip install --upgrade openai
+
 
       - name: Clone Fabric
         run: |
