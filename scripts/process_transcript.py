@@ -29,7 +29,7 @@ def generate_summary(transcript):
     client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
     
     response = client.chat.completions.create(
-        model="gpt-4",
+        model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": "You are a helpful assistant that creates clear, accurate, and comprehensive summaries while maintaining the original context and key details."},
             {"role": "user", "content": get_summary_prompt(transcript)}
