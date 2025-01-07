@@ -18,13 +18,12 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install openai python-dotenv
+          # Instalamos las dependencias necesarias directamente
+          pip install openai python-dotenv requests typing-extensions pyyaml
 
       - name: Clone Fabric
         run: |
           git clone https://github.com/danielmiessler/fabric.git
-          cd fabric
-          pip install -r requirements.txt
 
       - name: Process Transcript
         env:
