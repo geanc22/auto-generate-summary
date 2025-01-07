@@ -1,0 +1,41 @@
+name: Fabric Summarize Transcript
+on:
+  push:
+    paths:
+      - 'transcripts/**'  # Se activará cuando se añadan archivos en la carpeta transcripts
+
+jobs:
+  summarize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install openai python-dotenv
+
+      - name: Clone Fabric
+        run: |
+          git clone https://github.com/danielmiessler/fabric.git
+          cd fabric
+          pip install -r requirements.txt
+
+      - name: Process Transcript
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python scripts/process_transcript.py
+          
+      - name: Commit Summary
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add summaries/
+          git commit -m "Add automated summary"
+          git push
