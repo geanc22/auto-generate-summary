@@ -1,7 +1,7 @@
 import os
 import json
 from pathlib import Path
-import openai
+from openai import OpenAI
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -26,9 +26,9 @@ Please provide the summary:"""
     return prompt
 
 def generate_summary(transcript):
-    openai.api_key = os.getenv('OPENAI_API_KEY')
+    client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
     
-    response = openai.ChatCompletion.create(
+    response = client.chat.completions.create(
         model="gpt-4",
         messages=[
             {"role": "system", "content": "You are a helpful assistant that creates clear, accurate, and comprehensive summaries while maintaining the original context and key details."},
