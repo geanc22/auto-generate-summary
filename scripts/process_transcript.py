@@ -13,16 +13,18 @@ def read_transcript(file_path):
 
 def get_summary_prompt(transcript):
     return f"""
-Given this transcript, please provide a comprehensive summary that:
-1. Captures the main points and key insights
-2. Maintains important context and nuance
-3. Is clear and well-structured
-4. Preserves any critical details or action items
+Por favor, proporciona un resumen completo de esta transcripción que:
+1. Capture los puntos principales y las ideas clave
+2. Mantenga el contexto y los matices importantes
+3. Sea claro y bien estructurado
+4. Preserve cualquier detalle crítico o elementos de acción
+
+Responde SIEMPRE en español.
 
 Transcript:
 {transcript}
 
-Please provide the summary:"""
+Por favor, proporciona el resumen:"""
 
 def generate_summary_openai(transcript):
     client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
