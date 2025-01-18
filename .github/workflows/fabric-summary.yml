@@ -7,8 +7,12 @@ on:
 jobs:
   summarize:
     runs-on: ubuntu-latest
+    permissions:          # Agregar permisos explícitos
+      contents: write    # Permiso para escribir en el repositorio
     steps:
       - uses: actions/checkout@v3
+        with:
+          token:${{secrets.GITHUB_TOKEN}}
       
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -34,8 +38,10 @@ jobs:
           
       - name: Commit Summary
         run: |
-          git config --global user.name 'GitHub Action'
-          git config --global user.email 'action@github.com'
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add summaries/
           git commit -m "Add automated summary"
-          git push
+          git push origin ${GITHUB_REF#refs/heads/}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
