@@ -1,4 +1,4 @@
-name: Fabric Summarize Transcript
+name: Summarize Transcript
 on:
   push:
     paths:
@@ -22,8 +22,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install "openai>=1.0.0" python-dotenv requests typing-extensions pyyaml groq
-
-     
 
       - name: Process Transcript
         env:
