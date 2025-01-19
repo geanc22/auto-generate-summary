@@ -1,19 +1,20 @@
-**Resumen:**
+Resumen:
 
-**Puntos Principales:**
+Puntos Principales:
+1. Se llevó a cabo un laboratorio utilizando Amazon Chrome y S3 para distribuir una página web estática en 200 puntos de conexión. Se implementó un error page personalizado para manejar errores en enlaces rotos o bloqueos geográficos.
+2. Se creó una base de datos en Amazon RDS con una instancia y se conectó al laboratorio de Landa utilizando políticas de seguridad personalizadas.
+3. Se creó una tabla de estudiantes y se insertó información en la base de datos utilizando una conexión desde Landa y una función de Python.
 
-1. Se describen dos laboratorios realizados, el primero con AWS S3, CloudFront y Chrome, y el segundo con AWS RDS y Landa.
-2. En el primer laboratorio, se explica cómo utilizar AWS S3 para alojar una página web estática y CloudFront para distribuirla en diferentes puntos de conexión, además de cómo crear páginas de error personalizadas.
-3. En el segundo laboratorio, se muestra cómo crear una base de datos en AWS RDS y conectarse a ella utilizando diferentes métodos, como Warbench y Landa, y se crean tablas y se insertan datos en ellas utilizando Python.
+Detalles Importantes:
+- El laboratorio con Chrome y S3 incluyó la protección de un web application firewall y un Route 53 para proteger contra ataques de DNS y dominio.
+- Se utilizó CloudFront para distribuir la página web estática y mejorar la atención de los usuarios.
+- Se creó un error page personalizado para manejar diferentes tipos de errores, como HTTP 404 y bloqueos geográficos.
+- Se creó una base de datos en RDS con una instancia y se conectó al laboratorio de Landa utilizando un grupo de seguridad personalizado.
+- Se creó una tabla de estudiantes y se insertó información en la base de datos utilizando una conexión desde Landa y una función de Python.
+- Se creó una segunda función de Python para mostrar los datos en el laboratorio de Landa.
 
-**Detalles Importantes:**
-
-1. En el primer laboratorio, se utiliza Chrome para verificar la funcionalidad de la página web distribuida por CloudFront y se explica cómo crear páginas de error personalizadas en caso de enlaces rotos o bloqueos geográficos.
-2. En el segundo laboratorio, se crea una base de datos y una tabla de estudiantes en AWS RDS, y se insertan datos en ella utilizando Python y la función de inserción creada.
-3. Se muestra cómo conectarse a la base de datos utilizando diferentes métodos, como Warbench y Landa, y se crea un grupo de seguridad para controlar el acceso al puerto.
-
-**Conclusiones o Acciones:**
-
-1. El primer laboratorio demuestra la eficacia de AWS S3 y CloudFront para alojar y distribuir páginas web estáticas de manera rápida y eficiente, y la personalización de las páginas de error en caso de enlaces rotos o bloqueos geográficos.
-2. El segundo laboratorio muestra la capacidad de AWS RDS para crear y gestionar bases de datos de manera sencilla, y la flexibilidad de conectarse a ellas utilizando diferentes métodos y lenguajes de programación.
-3. Se recomienda la utilización de estas herramientas para el desarrollo y despliegue de aplicaciones web y la gestión de bases de datos en entornos cloud.
+Conclusiones o Acciones:
+- El laboratorio demostró la capacidad de distribuir una página web estática en múltiples ubicaciones geográficas utilizando Amazon Chrome y S3.
+- La implementación de un error page personalizado mejoró la capacidad de manejar errores y brindar una mejor experiencia de usuario.
+- La creación de una base de datos en Amazon RDS y la conexión al laboratorio de Landa utilizando políticas de seguridad personalizadas demostró la capacidad de integrar diferentes servicios de AWS para mejorar la seguridad y la eficiencia.
+- La capacidad de insertar información en la base de datos utilizando una conexión desde Landa y una función de Python demostró la flexibilidad y la potencia de los servicios de AWS para manejar datos y aplicaciones.

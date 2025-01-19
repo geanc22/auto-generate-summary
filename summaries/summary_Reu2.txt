@@ -1,24 +1,22 @@
 **Resumen:**
 
-**Tema:** Laboratorios de Chrome, S3, CloudFront, RDS y Landa
+**Título:** Laboratorios de Chrome, S3, CloudFront, RDS y Landa
 
 **Puntos Principales:**
 
-1. Se llevó a cabo un laboratorio utilizando Chrome con la versión 3, que permite almacenar objetos y publicar páginas web estáticas en 200 puntos de conexión mediante CloudFront.
-2. Se creó un bucket en S3 para alojar los archivos de la página web estática y se personalizaron las páginas de error para manejar errores en el enlace, URL o bloqueos geográficos.
-3. Se configuró CloudFront para distribuir la página web estática y gestionar la seguridad mediante Routic53.
-4. Se realizó un segundo laboratorio con RDS y Landa, creando una base de datos y una instancia para conectarse a los datos públicamente.
-5. Se utilizó Amazon RDSM para insertar y consultar datos en la base de datos, además de crear una función de Python para conectarse al RDSM y mostrar los datos.
+1. Se llevó a cabo un laboratorio utilizando Chrome con la versión 3, que ofrece la capacidad de almacenar objetos y distribuirlos en 200 puntos de conexión. Se utilizó una página web estática alojada en Amazon S3 y distribuida por CloudFront, con una configuración de error page personalizada para manejar errores de enlaces rotos o bloqueos de países.
+2. Se creó un bucket en S3 y se subieron los archivos, incluyendo una carpeta con la página web estática y otra carpeta para la error page, y se configuró CloudFront para distribuir los archivos y manejar los errores de enlaces.
+3. Se realizó un segundo laboratorio con RDS, creando una base de datos con una instancia y configurando una política de seguridad para conectarse a través de Warbench o Landa.
+4. Se creó una función de Python para mostrar y insertar datos en el RDS utilizando el endpoint y las credenciales necesarias.
 
 **Detalles Importantes:**
 
-- Se personalizaron las páginas de error en S3 para gestionar errores en el enlace, URL o bloqueos geográficos.
-- Se creó un grupo de seguridad para conectarse al puerto de la base de datos en Landa y RDS.
-- Se insertaron datos en la base de datos utilizando Amazon RDSM y se creó una función de Python para conectarse al RDSM.
+1. La implementación en S3 y CloudFront tuvo como objetivo mejorar la atención y entrega de contenidos estáticos a través del uso de un error page personalizado.
+2. La función de Python creada en el laboratorio de RDS permitió mostrar y insertar datos en la base de datos utilizando el endpoint y las credenciales adecuadas.
+3. La importancia de la gestión de políticas de seguridad en la conectividad a las bases de datos y la entrega de contenidos estáticos se destacó en ambos laboratorios.
 
 **Conclusiones o Acciones:**
 
-- CloudFront mejora la atención y destruye mejor la página web estática en 200 puntos de conexión.
-- Las páginas de error personalizadas en S3 permiten gestionar errores en el enlace, URL o bloqueos geográficos.
-- Landa y RDS permiten crear una base de datos y una instancia para gestionar los datos públicamente.
-- La creación de una función de Python permite insertar y consultar datos en la base de datos.
+1. La implementación de S3 y CloudFront permitió entregar contenidos con mayor eficiencia y personalización en la gestión de errores.
+2. La configuración de políticas de seguridad en RDS es clave para garantizar la conectividad a las bases de datos y la seguridad de los datos.
+3. La creación de funciones personalizadas en Python puede facilitar la manipulación y visualización de datos en las bases de datos.

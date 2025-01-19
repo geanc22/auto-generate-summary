@@ -1,0 +1,25 @@
+**Resumen:**
+
+**Puntos Principales:**
+
+1. Se llevó a cabo un laboratorio utilizando Chrome y CloudFront para distribuir una página web estática en 200 puntos de conexión.
+2. Se configuró una web protegida por Chrome y un Route 53 para protección de DNS o dominios.
+3. Se utilizó S3 para crear un bucket y subir archivos, incluyendo una carpeta de página web estática y una carpeta para personalizar páginas de error.
+4. Se creó una conexión Cloud Front Distribution y se configuraron errores page para manejar links incorrectos y bloqueos geográficos.
+5. Se realizó un segundo laboratorio utilizando RDS y se creó una base de datos con una instancia, permitiendo conexiones públicas a través de Warbench y Landa.
+6. Se creó un grupo de seguridad para conectarse al puerto de RDS con usuario y contraseña, y se insertó data en una tabla de estudiantes.
+7. Se creó una función de Python para conectarse al RDSM y mostrar datos utilizando el endpoint, y se insertó data utilizando otro función.
+
+**Detalles Importantes:**
+
+- Se explicó el proceso de subir una página web estática al bucket de S3 utilizando Cloud Front Distribution para mejorar la atención y distribución en diferentes puntos de conexión.
+- Se mostró cómo crear una página de error personalizada en caso de enlaces incorrectos o bloqueos geográficos utilizando Cloud Front.
+- Se realizó una demostración de conexión a la base de datos utilizando Warbench y Landa, y se creó una tabla de estudiantes para insertar data.
+- Se creó una función de Python para mostrar y insertar data en la tabla de estudiantes utilizando el endpoint de RDSM.
+
+**Conclusiones o Acciones:**
+
+- Es importante entender cómo utilizar herramientas como Chrome, CloudFront, S3 y RDS para distribuir y proteger páginas web y manejar datos en diferentes instancias.
+- Las funciones de Python pueden ser útiles para realizar tareas específicas de conexión y manipulación de data en bases de datos.
+- Es necesario tener en cuenta la seguridad y acceso a las bases de datos, creando grupos de seguridad y utilizando usuarios y contraseñas para proteger la información.
+- Es recomendable personalizar páginas de error para una mejor experiencia de usuario en caso de enlaces incorrectos o bloqueos geográficos.
