@@ -1,24 +1,22 @@
-**Resumen:**
-
-**Tema:** Práctica con AWS (Amazon Web Services)
+**RESUMEN:**
 
 **Puntos Principales:**
 
-1. Se llevó a cabo un laboratorio utilizando Chrome y CloudFront para distribuir una página web estática en 200 puntos de conexión. Se protegió el sitio con un Routic 53 y un dominio propio.
-2. Se creó una bucket en S3 para almacenar los archivos de la página web y se personalizaron las páginas de error.
-3. Se llevó a cabo un segundo laboratorio utilizando RDS y una base de datos con una instancia. Se conectó a la base de datos públicamente mediante Warbench y se creó una tabla de estudiantes para insertar datos.
-4. Se creó una función de Python para conectarse al RDSM y mostrar los datos almacenados en la base de datos utilizando un endpoint.
+1. Se llevó a cabo un laboratorio utilizando Chrome 3, Cloud Front y un bucket de S3 para crear una página web estática con error page personalizado.
+2. Se configuró una web protegida por Chrome y un Routic 53 para proteger el DNS o el dominio.
+3. Se creó una base de datos en RDS con una instancia y se conectó al MiceCole Warbench.
+4. También se creó una función de Python para conectarse al RDS y mostrar/insertar datos en la base de datos.
 
 **Detalles Importantes:**
 
-- CloudFront distribuye el contenido en diferentes puntos de conexión para mejorar la atención y la entrega del sitio web.
-- Se protegió el sitio web con un Routic 53 y un dominio propio, y se crearon páginas de error personalizadas en caso de un enlace incorrecto o bloqueo de países.
-- Se creó una instancia en RDS y se conectó a la base de datos públicamente mediante Warbench.
-- Se creó una tabla de estudiantes y se insertaron datos de prueba en la base de datos.
-- Se creó una función de Python para conectarse al RDSM y mostrar los datos almacenados en la base de datos a través de un endpoint.
+1. Cloud Front distribuye la página web estática en 200 puntos de conexión para mejorar la atención.
+2. El error page se creó para gestionar errores en el link, URL, cuando hay un error de protocolo HTTP o un bloqueo de países.
+3. Se creó una política de seguridad en RDS para conectarse al puerto 36 y se conectó con el usuario y contraseña del MiceCole Warbench.
+4. La función de Python se utilizó para conectarse al endpoint de la base de datos y mostrar/insertar datos en la misma.
 
 **Conclusiones o Acciones:**
 
-- Se demostró la capacidad de distribuir contenido en diferentes puntos de conexión utilizando CloudFront y la importancia de proteger el sitio web con un Routic 53 y un dominio propio.
-- Se demostró la capacidad de crear y conectarse a una base de datos con RDS y la posibilidad de insertar y mostrar datos a través de una función de Python utilizando un endpoint.
-- Es importante verificar la seguridad y la conexión a la base de datos a través de diferentes métodos y políticas de seguridad.
+1. Se recomienda el uso de Cloud Front para mejorar la atención y gestionar errores en el error page.
+2. Se debe crear una política de seguridad en RDS para conectarse de manera segura a los datos en el puerto 36.
+3. Se puede utilizar una función de Python para mostrar y insertar datos en la base de datos.
+4. Se debe tener en cuenta la localización y actualizar la configuración de seguridad en consecuencia.

@@ -1,0 +1,19 @@
+**Resumen:**
+
+**Puntos Principales:**
+
+1. Se describen dos laboratorios realizados, el primero con AWS S3, CloudFront y Chrome, y el segundo con AWS RDS y Landa.
+2. En el primer laboratorio, se explica cómo utilizar AWS S3 para alojar una página web estática y CloudFront para distribuirla en diferentes puntos de conexión, además de cómo crear páginas de error personalizadas.
+3. En el segundo laboratorio, se muestra cómo crear una base de datos en AWS RDS y conectarse a ella utilizando diferentes métodos, como Warbench y Landa, y se crean tablas y se insertan datos en ellas utilizando Python.
+
+**Detalles Importantes:**
+
+1. En el primer laboratorio, se utiliza Chrome para verificar la funcionalidad de la página web distribuida por CloudFront y se explica cómo crear páginas de error personalizadas en caso de enlaces rotos o bloqueos geográficos.
+2. En el segundo laboratorio, se crea una base de datos y una tabla de estudiantes en AWS RDS, y se insertan datos en ella utilizando Python y la función de inserción creada.
+3. Se muestra cómo conectarse a la base de datos utilizando diferentes métodos, como Warbench y Landa, y se crea un grupo de seguridad para controlar el acceso al puerto.
+
+**Conclusiones o Acciones:**
+
+1. El primer laboratorio demuestra la eficacia de AWS S3 y CloudFront para alojar y distribuir páginas web estáticas de manera rápida y eficiente, y la personalización de las páginas de error en caso de enlaces rotos o bloqueos geográficos.
+2. El segundo laboratorio muestra la capacidad de AWS RDS para crear y gestionar bases de datos de manera sencilla, y la flexibilidad de conectarse a ellas utilizando diferentes métodos y lenguajes de programación.
+3. Se recomienda la utilización de estas herramientas para el desarrollo y despliegue de aplicaciones web y la gestión de bases de datos en entornos cloud.
