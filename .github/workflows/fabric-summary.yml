@@ -23,14 +23,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install "openai>=1.0.0" python-dotenv requests typing-extensions pyyaml groq
 
-      - name: Clone and Configure Fabric
-        run: |
-          git clone https://github.com/danielmiessler/fabric.git
-          # No buscamos requirements.txt ya que no existe
-          # Creamos el directorio de configuración si no existe
-          mkdir -p fabric/config
-          # Si el archivo de ejemplo no existe, creamos uno básico
-          echo "model: gpt-4-turbo-preview" > fabric/config/config.yaml
+     
 
       - name: Process Transcript
         env:
