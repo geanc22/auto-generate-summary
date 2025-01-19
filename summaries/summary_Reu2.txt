@@ -1,22 +1,33 @@
 **Resumen:**
 
-**Título:** Laboratorios de Chrome, S3, CloudFront, RDS y Landa
+**Tema:** Laboratorios de Chrome, web estática, S3, CloudFront, RDS, y RDSM
 
 **Puntos Principales:**
 
-1. Se llevó a cabo un laboratorio utilizando Chrome con la versión 3, que ofrece la capacidad de almacenar objetos y distribuirlos en 200 puntos de conexión. Se utilizó una página web estática alojada en Amazon S3 y distribuida por CloudFront, con una configuración de error page personalizada para manejar errores de enlaces rotos o bloqueos de países.
-2. Se creó un bucket en S3 y se subieron los archivos, incluyendo una carpeta con la página web estática y otra carpeta para la error page, y se configuró CloudFront para distribuir los archivos y manejar los errores de enlaces.
-3. Se realizó un segundo laboratorio con RDS, creando una base de datos con una instancia y configurando una política de seguridad para conectarse a través de Warbench o Landa.
-4. Se creó una función de Python para mostrar y insertar datos en el RDS utilizando el endpoint y las credenciales necesarias.
+1. Se llevó a cabo un laboratorio utilizando Chrome versión 3, donde se almacenaron objetos y se creó una página web estática.
+2. Se utilizó CloudFront para distribuir la página web estática a 200 puntos de conexión y mejorar la atención.
+3. Se implementó una protección en el Chrome y Routic 53 para proteger el DNS o dominio.
+4. Se creó un bucket en S3 y se cargaron archivos, incluyendo una página web estática en una carpeta.
+5. Se creó una página de error personalizada en S3 utilizando CloudFront para manejar errores de enlaces y bloqueos de países.
+6. Se realizó un segundo laboratorio utilizando RDS y RDSM para crear una base de datos con una instancia y conectarse públicamente.
+7. Se creó un grupo de seguridad para conectarse al puerto MiceCole y se creó un Amazon RDSM con todos los requerimientos.
+8. Se hizo una conexión al endpoint de RDSM utilizando un usuario y contraseña.
+9. Se creó una tabla de estudiantes y se insertó data utilizando una función de Python para mostrar los datos.
 
 **Detalles Importantes:**
 
-1. La implementación en S3 y CloudFront tuvo como objetivo mejorar la atención y entrega de contenidos estáticos a través del uso de un error page personalizado.
-2. La función de Python creada en el laboratorio de RDS permitió mostrar y insertar datos en la base de datos utilizando el endpoint y las credenciales adecuadas.
-3. La importancia de la gestión de políticas de seguridad en la conectividad a las bases de datos y la entrega de contenidos estáticos se destacó en ambos laboratorios.
+- Se explicó cómo se mostrarían las aplicaciones normales en el S3.
+- Se crearon carpetas en el S3 para manejar errores de enlaces y bloqueos de países.
+- Se probó la página de error personalizada en Chrome utilizando un teléfono con la página subida.
+- Se hizo una conexión a los datos en el landa utilizando su propia política.
+- Se creó una función de Python para insertar datos y probar la conexión.
+- Se utilizó un tester para verificar la conexión y mostrar los datos.
 
 **Conclusiones o Acciones:**
 
-1. La implementación de S3 y CloudFront permitió entregar contenidos con mayor eficiencia y personalización en la gestión de errores.
-2. La configuración de políticas de seguridad en RDS es clave para garantizar la conectividad a las bases de datos y la seguridad de los datos.
-3. La creación de funciones personalizadas en Python puede facilitar la manipulación y visualización de datos en las bases de datos.
+- La distribución de CloudFront mejora la atención y la distribución de la página web estática.
+- La protección en Chrome y Routic 53 es importante para proteger el DNS o dominio.
+- La creación de una página de error personalizada ayuda a manejar errores de enlaces y bloqueos de países.
+- La conexión a los datos en RDS y RDSM es importante para mostrar y insertar data.
+- La creación de una función de Python ayuda a insertar y mostrar datos en la base de datos.
+- La verificación de la conexión utilizando un tester es importante para garantizar una conexión exitosa.

@@ -1,0 +1,25 @@
+**Resumen:**
+
+**Título:** Laboratorios de Chrome, S3, CloudFront, RDS y Landa
+
+**Puntos Principales:**
+
+1. Se llevó a cabo un laboratorio utilizando Chrome con la versión 3, el cual mejora la atención y distribuye en 200 puntos de conexión.
+2. Se configuró una práctica en el laboratorio con una página web estática alojada en Amazon S3, con una distribución de CloudFront que incluye un error page personalizado para manejar errores de enlaces, URLs y bloqueos regionales.
+3. Se creó una base de datos en Amazon RDS con una instancia y se conectó públicamente a través de MiceCole Warbench y Landa.
+4. Se demostró la conexión a los datos en Landa a través de Warbench y Landa.
+5. Se creó un grupo de seguridad y un endpoint en RDS para conectarse al puerto y usuario MiceCole Warbench, y se insertaron datos utilizando una función de Python.
+
+**Detalles Importantes:**
+
+1. CloudFront distribuye contenido en caché en múltiples ubicaciones geográficas, mejorando así la latencia y el ancho de banda para los usuarios.
+2. El error page en CloudFront está configurado para manejar errores HTTP como el 404 y las restricciones geográficas.
+3. Amazon RDS facilita el alojamiento, la administración y la escalabilidad de bases de datos relacionales en la nube.
+4. Se creó una tabla de estudiantes y se insertaron datos en la base de datos utilizando una conexión y una función de Python.
+
+**Conclusiones o Acciones:**
+
+1. La versión 3 de Chrome mejora la atención y distribuye el contenido de manera más eficiente en 200 puntos de conexión.
+2. CloudFront es una herramienta útil para distribuir contenido estático y manejar errores en páginas web.
+3. Amazon RDS simplifica el proceso de alojar y administrar bases de datos relacionales en la nube.
+4. Se demostró la capacidad de conectarse a datos alojados en RDS a través de Landa y Warbench, junto con la inserción de datos mediante una función de Python.
