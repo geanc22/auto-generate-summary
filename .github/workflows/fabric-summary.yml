@@ -2,13 +2,13 @@ name: Fabric Summarize Transcript
 on:
   push:
     paths:
-      - 'transcripts/**'  # Se activará cuando se añadan archivos en la carpeta transcripts
+      - 'transcripts/**'
 
 jobs:
   summarize:
     runs-on: ubuntu-latest
-    permissions:          # Agregar permisos explícitos
-      contents: write    # Permiso para escribir en el repositorio
+    permissions:
+      contents: write
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -21,12 +21,14 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          # Instalamos las dependencias necesarias directamente
           pip install "openai>=1.0.0" python-dotenv requests typing-extensions pyyaml groq
 
-      - name: Clone Fabric
+      - name: Clone and Configure Fabric
         run: |
           git clone https://github.com/danielmiessler/fabric.git
+          cd fabric
+          pip install -r requirements.txt
+          cp config/config.yaml.example config/config.yaml
 
       - name: Process Transcript
         env:
