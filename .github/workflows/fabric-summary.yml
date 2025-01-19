@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install "openai>=1.0.0" python-dotenv requests typing-extensions pyyaml groq python-docx
+          pip install "openai>=1.0.0" python-dotenv requests typing-extensions pyyaml groq python-docx 
 
       - name: Process Transcript
         env:
@@ -34,12 +34,12 @@ jobs:
         run: |
           python scripts/report_generator.py
 
-      - name: Commit Summary
+      - name: Commit Changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add summaries/
-          git commit -m "Add automated summary" || exit 0
+          git add summaries/ reports/
+          git commit -m "Add automated summary and report" || exit 0
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

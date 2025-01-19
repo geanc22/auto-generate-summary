@@ -1,7 +1,0 @@
-El ponente ha realizado dos laboratorios, el primero con Amazon S3 y CloudFront, y el segundo con RDS y Lambda.
-
-En el primer laboratorio, el ponente creó una página web estática en Amazon S3 y la distribuyó a través de CloudFront para mejorar su disponibilidad en 200 puntos de conexión. También creó una página de error personalizada en CloudFront que se mostrará si hay un error de protocolo HTTP 404 o una prohibición de país en el acceso.
-
-En el segundo laboratorio, el ponente creó una base de datos en RDS y una instancia de conexión. Luego, se conectó al RDS a través de Warbench y de Lambda, utilizando un grupo de seguridad y un endpoint específicos. El ponente creó una tabla de estudiantes y una función de Python en Lambda para insertar y mostrar datos en el RDS a través de Warbench o Lambda.
-
-En resumen, el ponente ha demostrado la creación y distribución de una página web estática en Amazon S3 y CloudFront, y la conexión y manipulación de datos en una base de datos de RDS a través de Warbench y Lambda, incluyendo la creación y uso de una página de error personalizada y una función de Python en Lambda.
