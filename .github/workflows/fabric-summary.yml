@@ -26,9 +26,11 @@ jobs:
       - name: Clone and Configure Fabric
         run: |
           git clone https://github.com/danielmiessler/fabric.git
-          cd fabric
-          pip install -r requirements.txt
-          cp config/config.yaml.example config/config.yaml
+          # No buscamos requirements.txt ya que no existe
+          # Creamos el directorio de configuración si no existe
+          mkdir -p fabric/config
+          # Si el archivo de ejemplo no existe, creamos uno básico
+          echo "model: gpt-4-turbo-preview" > fabric/config/config.yaml
 
       - name: Process Transcript
         env:
