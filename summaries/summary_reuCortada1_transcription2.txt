@@ -1,0 +1,24 @@
+**Resumen:**
+
+**Tema:** Práctica con AWS (Amazon Web Services)
+
+**Puntos Principales:**
+
+1. Se llevó a cabo un laboratorio utilizando Chrome y CloudFront para distribuir una página web estática en 200 puntos de conexión. Se protegió el sitio con un Routic 53 y un dominio propio.
+2. Se creó una bucket en S3 para almacenar los archivos de la página web y se personalizaron las páginas de error.
+3. Se llevó a cabo un segundo laboratorio utilizando RDS y una base de datos con una instancia. Se conectó a la base de datos públicamente mediante Warbench y se creó una tabla de estudiantes para insertar datos.
+4. Se creó una función de Python para conectarse al RDSM y mostrar los datos almacenados en la base de datos utilizando un endpoint.
+
+**Detalles Importantes:**
+
+- CloudFront distribuye el contenido en diferentes puntos de conexión para mejorar la atención y la entrega del sitio web.
+- Se protegió el sitio web con un Routic 53 y un dominio propio, y se crearon páginas de error personalizadas en caso de un enlace incorrecto o bloqueo de países.
+- Se creó una instancia en RDS y se conectó a la base de datos públicamente mediante Warbench.
+- Se creó una tabla de estudiantes y se insertaron datos de prueba en la base de datos.
+- Se creó una función de Python para conectarse al RDSM y mostrar los datos almacenados en la base de datos a través de un endpoint.
+
+**Conclusiones o Acciones:**
+
+- Se demostró la capacidad de distribuir contenido en diferentes puntos de conexión utilizando CloudFront y la importancia de proteger el sitio web con un Routic 53 y un dominio propio.
+- Se demostró la capacidad de crear y conectarse a una base de datos con RDS y la posibilidad de insertar y mostrar datos a través de una función de Python utilizando un endpoint.
+- Es importante verificar la seguridad y la conexión a la base de datos a través de diferentes métodos y políticas de seguridad.
